@@ -1,0 +1,6 @@
+C:\Users\100455888\Humber Fall 2015\Numeric Computing (GAME 104)\ConsoleApplication1\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
+C:\Users\100455888\Humber Fall 2015\Numeric Computing (GAME 104)\ConsoleApplication1\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+C:\Users\100455888\Humber Fall 2015\Numeric Computing (GAME 104)\ConsoleApplication1\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+C:\Users\100455888\Humber Fall 2015\Numeric Computing (GAME 104)\ConsoleApplication1\ConsoleApplication1\obj\Debug\IBTextBasedRPG.csprojResolveAssemblyReference.cache
+C:\Users\100455888\Humber Fall 2015\Numeric Computing (GAME 104)\ConsoleApplication1\ConsoleApplication1\obj\Debug\ConsoleApplication1.exe
+C:\Users\100455888\Humber Fall 2015\Numeric Computing (GAME 104)\ConsoleApplication1\ConsoleApplication1\obj\Debug\ConsoleApplication1.pdb
