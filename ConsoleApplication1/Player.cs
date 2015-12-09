@@ -34,6 +34,12 @@ namespace IBTextBasedRPG
             currentHealth -= damage;
         }
 
+        public void changePlayerWeapon(int newWeapon)
+        {
+            currentWeapon = newWeapon;
+            Console.WriteLine(currentWeapon);
+            Console.WriteLine(newWeapon);
+        }
         /*
         string p1Name;
         int currentHealth;
