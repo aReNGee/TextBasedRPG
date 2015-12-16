@@ -22,11 +22,20 @@ namespace IBTextBasedRPG
 
         public Player() //default constructor with default values.
         {
-            name = "default";
-            currentHealth = 10; //feeling pretty healthy
-            maxHealth = 10;
+            name = "UNKNOWN";
+            currentHealth = 26; //feeling pretty healthy
+            maxHealth = 26;
             currentWeapon = 0; //no weapon
             status = "Alive"; //not dead
+        }
+
+        public Player(string pname, int chealth, int mhealth, string pstatus, int cweapon)
+        {
+            pname = name;
+            chealth = currentHealth;
+            mhealth = maxHealth;
+            pstatus = status;
+            cweapon = currentWeapon;
         }
 
         public void playerDamage(int damage)
@@ -37,8 +46,23 @@ namespace IBTextBasedRPG
         public void changePlayerWeapon(int newWeapon)
         {
             currentWeapon = newWeapon;
-            Console.WriteLine(currentWeapon);
-            Console.WriteLine(newWeapon);
+            //Console.WriteLine(currentWeapon);
+            //Console.WriteLine(newWeapon);
+        }
+
+        public int checkPlayerWeapon()
+        {
+            return currentWeapon;
+        }
+
+        public void changePlayerName()
+        {
+            name = Console.ReadLine();
+        }
+
+        public void fullHeal()
+        {
+            currentHealth = maxHealth;
         }
         /*
         string p1Name;
