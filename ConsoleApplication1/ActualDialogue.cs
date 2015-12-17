@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace IBTextBasedRPG
 {
-    class ActualDialogue
+    class ActualDialogue //class that contains all writeline statements used to display dialogue and choices
     {
         
         public static void opening() //tracker 1
@@ -29,7 +29,7 @@ namespace IBTextBasedRPG
             Console.ReadLine();
             Console.WriteLine("You walk for minutes that turn to hours, and hours that turn to days.");
             Console.WriteLine("The nothingness stretches out before you in every direction.");
-            Console.WriteLine("You begin to wonder if there was even a time before this great emptiesness...");
+            Console.WriteLine("You begin to wonder if there was even a time before this great emptiness...");
             Console.WriteLine("Slowly, during your timeless walk, you too fade away to nothing.");
             Console.WriteLine("");
             Console.WriteLine("BAD END! Try again.");
@@ -43,8 +43,8 @@ namespace IBTextBasedRPG
             Console.WriteLine("When your vision returns, you see that the light makes barely a dent in the unending blackness.");
             Console.WriteLine("Fearful now, you step hastily through the door lest it suddenly close again.");
             Console.ReadLine();
-            Console.WriteLine("Your stomache lurches as you step well below where the floor should be.");
-            Console.WriteLine("There's no floor! You flail your arms to try to arrest your passage, but its too late.");
+            Console.WriteLine("Your stomach lurches as you step well below where the floor should be.");
+            Console.WriteLine("There's no floor! You flail your arms to try to arrest your passage, but it's too late.");
             Console.ReadLine();
             Console.WriteLine("Blinded by the light as you exit the door, you fall several feet to the ground, landing heavily.");
             Console.WriteLine("When you look up again, the door is gone.");
@@ -58,7 +58,7 @@ namespace IBTextBasedRPG
             Console.WriteLine("After careful consideration, you quickly come to the conclusion that the mountain is too far away for you to reach.");
             Console.WriteLine("You begin your walk up the hill.");
             Console.ReadLine();
-            Console.WriteLine("As you crest the ridge, you peer down the hill to see a few man made structures of some kind next to a river.");
+            Console.WriteLine("As you crest the ridge, you peer down the hill to see a few manmade structures of some kind next to a river.");
             Console.WriteLine("You don't spot any people, but with renewed determination you make your way down the hill.");
             Console.ReadLine();
         }
@@ -108,7 +108,7 @@ namespace IBTextBasedRPG
         public static void ewGross() //tracker 7
         {
             Console.WriteLine("Pressing forward, you find some strips of 'jerky', but are too disgusted to touch them.");
-            Console.WriteLine("When a thorough explanation reveals nothing more, you return to the enterance.");
+            Console.WriteLine("When a thorough explanation reveals nothing more, you return to the entrance.");
             Console.ReadLine();
         }
 
@@ -125,7 +125,7 @@ namespace IBTextBasedRPG
         {
             string dialogueChoice;
             int numchoices = 2;
-            Console.WriteLine("As you return exit the door of the slughterhouse, you are surprised and ");
+            Console.WriteLine("As you return exit the door of the slaughterhouse, you are surprised and ");
             Console.WriteLine("relieved to see another living human standing before you.");
             Console.WriteLine("A closer look reveals the human is not living at all, merely well preserved.");
             Console.WriteLine("Your relief turns into fear as the corpse lets out a moan and shuffles towards you!");
@@ -137,7 +137,7 @@ namespace IBTextBasedRPG
             if (Player1.currentWeapon == 1)
             {
                 Console.WriteLine("3. MEATHOOK DIPLOMACY! (attack)");
-                numchoices++;
+                numchoices++; //you don't have as many choices if you don't have a weapon
             }
             dialogueChoice = DialogueTrees.NumChoice(numchoices);
             return dialogueChoice;
@@ -145,8 +145,8 @@ namespace IBTextBasedRPG
 
         public static void destroyedHouse() //tracker 12
         {
-            Console.WriteLine("You cautiously enter the dessicated house, to find the interior of the house looking no better than the exterior.");
-            Console.WriteLine("However, you are pleasantly suprised to find a small shrine has been set up inside.");
+            Console.WriteLine("You cautiously enter the desiccated house, to find the interior of the house looking no better than the exterior.");
+            Console.WriteLine("However, you are pleasantly surprised to find a small shrine has been set up inside.");
             Console.WriteLine("A small plaque in front of the shrine has the words 'Declare Yourself'");
             Console.WriteLine("(Declare yourself by entering your name)");
         }
@@ -169,7 +169,7 @@ namespace IBTextBasedRPG
             Console.ReadLine();
         }
 
-        public static int stabthezombie() //tracker 11;
+        public static int stabthezombie() //tracker 11a
         {
             Console.WriteLine("Steeling yourself for what must be done, you ready your meathook.");
             Random rnd = new Random();
@@ -177,7 +177,7 @@ namespace IBTextBasedRPG
             return result;
         }
 
-        public static void BigStab()
+        public static void BigStab() //tracker 11b
         {
             Console.WriteLine("Your meathook smashes the corpse's head, dealing 12 damage!");
             Console.WriteLine("The corpse's head comes free of the body, and the corpse collapses.");
@@ -186,13 +186,13 @@ namespace IBTextBasedRPG
             Console.ReadLine();
         }
 
-        public static void LittleStab()
+        public static void LittleStab() //tracker 11c
         {
             Console.WriteLine("Your meathook glances off the corpse's chest, dealing 6 damage!");
             Console.WriteLine("The corpse falls back and lets out a moan, but is soon shambling forward once again.");
         }
 
-        public static void theRiver()
+        public static void theRiver() //tracker 9
         {
             Console.WriteLine("You can feel your purpose finally becoming clear as you approach the river.");
             Console.WriteLine("An enormous Kraken lies dying upon the shore.");
@@ -203,14 +203,15 @@ namespace IBTextBasedRPG
             Console.ReadLine();
         }
 
-        public static void DeadKraken()
+        public static void DeadKraken(int level, int score) //tracker 16
         {
             Console.WriteLine("The Kraken trashes once more in its death throes, then finally subsides.");
             Console.WriteLine("You toss your gory Meathook aside and sadly survey the wreckage of this once proud creature.");
-            Console.WriteLine("Your melancholy subsides as you feel yourself begin to dissapear.");
+            Console.WriteLine("Your melancholy subsides as you feel yourself begin to disapear.");
             Console.WriteLine("Your job complete, you're returning to whence you came.");
             Console.WriteLine();
             Console.WriteLine("Congratulations! You have beaten the game.");
+            Console.WriteLine("You were level {0} and had a score of {1}.", level, score);
             Console.ReadLine();
         }
 
